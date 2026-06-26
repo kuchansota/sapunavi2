@@ -196,14 +196,16 @@ chatGPT等も購入リンクを提示してくれることはありますが、A
 
 ### MVPで作る機能
 
-①ユーザー登録機能
-②AI相談チャットボット機能 
+①AI相談チャットボット機能 
+②AIが提案したサプリの購入リンク提示機能(MVPでは楽天のリンクのみ)
+→楽天のapi連携が、AmazonとYahooの連携より簡単そうなため、まずは楽天の連携をする
 
 ### 本リリースで作る機能
 
-①診断履歴・チャット履歴の保存機能 
-②気になったサプリのお気に入り登録機能
-③AIが提案したサプリの購入リンク提示機能
+①ユーザー登録機能
+②診断履歴・チャット履歴の保存機能 
+③気になったサプリのお気に入り登録機能
+④AIが提案したサプリの購入リンク提示機能（AmazonとYahoo）
 
 ## 8. このアプリの懸念点とその対策
 
@@ -251,7 +253,7 @@ chatGPT等も購入リンクを提示してくれることはありますが、A
 - フレームワーク：Ruby on Rails
 - DB：PostgreSQL
 - デプロイ先：Render
-- 使用予定ライブラリ：①ruby-openai、②bcrypt、③vacuum(Amazon PA-API連携用)、④rakuten_web_service（楽天商品検索API用）
+- 使用予定ライブラリ：①ruby-openai、②bcrypt、③vacuum（Amazon PA-API連携用）、④rakuten_web_service（楽天商品検索API用）、⑤faraday（Yahoo shopping 商品検索api用）
 
 ---
 
